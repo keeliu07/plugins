@@ -67,11 +67,8 @@
   // The set of registered JavaScript channel names.
   NSMutableSet* _javaScriptChannelNames;
   FLTWKNavigationDelegate* _navigationDelegate;
-<<<<<<< HEAD
   FLTWKProgressionDelegate* _progressionDelegate;
-=======
   NSObject<FlutterPluginRegistrar>* _registrar;
->>>>>>> ecf0d3c23aeeeb340819a6d6fe4515556a98de23
 }
 
 - (instancetype)initWithFrame:(CGRect)frame

@@ -85,9 +85,6 @@ class MethodChannelWebViewPlatform implements WebViewPlatformController {
   }
 
   @override
-<<<<<<< HEAD
-  Future<String?> currentUrl() => _channel.invokeMethod<String>('currentUrl');
-=======
   Future<void> loadAssetHtmlFile(String url) =>
       _channel.invokeMethod<String>('loadAssetHtmlFile', url);
 
@@ -96,8 +93,7 @@ class MethodChannelWebViewPlatform implements WebViewPlatformController {
       _channel.invokeMethod<String>('loadLocalHtmlFile', url);
 
   @override
-  Future<String> currentUrl() => _channel.invokeMethod<String>('currentUrl');
->>>>>>> ecf0d3c23aeeeb340819a6d6fe4515556a98de23
+  Future<String?> currentUrl() => _channel.invokeMethod<String>('currentUrl');
 
   @override
   Future<bool> canGoBack() =>
