@@ -85,7 +85,19 @@ class MethodChannelWebViewPlatform implements WebViewPlatformController {
   }
 
   @override
+<<<<<<< HEAD
   Future<String?> currentUrl() => _channel.invokeMethod<String>('currentUrl');
+=======
+  Future<void> loadAssetHtmlFile(String url) =>
+      _channel.invokeMethod<String>('loadAssetHtmlFile', url);
+
+  @override
+  Future<void> loadLocalHtmlFile(String url) =>
+      _channel.invokeMethod<String>('loadLocalHtmlFile', url);
+
+  @override
+  Future<String> currentUrl() => _channel.invokeMethod<String>('currentUrl');
+>>>>>>> ecf0d3c23aeeeb340819a6d6fe4515556a98de23
 
   @override
   Future<bool> canGoBack() =>
